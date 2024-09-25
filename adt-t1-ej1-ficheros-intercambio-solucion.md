@@ -1,5 +1,5 @@
 # Ejercicio - Ficheros de Intercambio de Datos
-Toma como referencia el siguiente archivo XML e intenta representar su contenido en otros de los formatos de intercambio de datos más reconocidos:
+Toma como referencia el siguiente archivo `XML` e intenta representar su contenido en otros de los formatos de intercambio de datos más reconocidos:
 - JSON
 - CSV
 - YAML
