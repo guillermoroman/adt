@@ -6,7 +6,7 @@ Toma como referencia el siguiente archivo XML e intenta representar su contenido
 
 ### XML original
 
-```xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <clientes>
 	<cliente DNI="78901234X">
