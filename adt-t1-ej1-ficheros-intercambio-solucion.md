@@ -126,7 +126,3 @@ message Clientes {
 }
 ```
 
-Este archivo describe la estructura para luego ser usado en la codificación binaria de los datos.
-
-### Resumen:
-Cada formato tiene sus ventajas y limitaciones, sobre todo cuando se manejan estructuras de datos complejas como la que proporcionas. **JSON** y **YAML** son más legibles y flexibles en cuanto a la representación de estructuras anidadas. **TOML** y **CSV** son más adecuados para estructuras simples, mientras que **Protobuf** está orientado a la eficiencia de datos en aplicaciones de alto rendimiento.
