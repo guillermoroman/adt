@@ -1,44 +1,5 @@
 # ADT - Tema 2 - Ejercicios
 
-Para la realización de los ejercicios se puede tomar como referencia el código de ejemplo visto en los apuntes y que se muestra a continuación:
-
-```java
-import java.io.File;
-
-public class DirectoryList {
-    public static void main(String[] args) {
-        // . apunta al directorio actual.
-        String path = ".";
-
-        if (args.length > 0) {
-           path = args[0];
-        }
-
-        File file = new File(path);
-
-        // Comprobar que la ruta es válida
-        if (!file.exists()){
-            System.out.println("File does not exist");
-        }
-        else {
-            if (file.isFile()){
-                System.out.println(file + " is a file");
-            }
-            else if (file.isDirectory()){
-                System.out.println(file + " is a directory. Contents:");
-                File[] files = file.listFiles();
-                assert files != null;
-                for (File f : files){
-                    String description = f.isDirectory() ? "/" :
-                            f.isFile() ? "_" : "?" ;
-                    System.out.println("("+description+")"+f.getName());
-                }
-            }
-        }
-    }
-}
-```
-
 ### Ejercicio 1: Verificar permisos de lectura, escritura y ejecución
 
 **Objetivo:** Usar los métodos `canRead()`, `canWrite()` y `canExecute()` para comprobar los permisos de un archivo o directorio. Tenemos que lograr proporcionar a nuestro programa contextos suficientes para que se den todos los casos posibles para cada uno de los métodos, es decir, proporcionar la ruta tanto a un archivo con derechos de lectura, otro sin derechos, 
