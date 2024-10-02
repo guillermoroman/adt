@@ -90,8 +90,4 @@ Escribe un programa en Java que abra un archivo de texto (por ejemplo, `archivo.
 Escribe un programa en Java que abra un archivo de texto (`archivo.txt`) y lea los primeros 5 bytes de su contenido. Los bytes leídos deben ser almacenados en un array de bytes de tamaño 5, y luego convertidos en una cadena de texto para ser mostrados en la consola. Si el archivo tiene menos de 5 bytes, el programa debe manejar correctamente esa situación.
 
 ### Ejercicio 12: Leer una parte específica de un archivo en un buffer más grande
-Escribe un programa en Java que abra un archivo de texto (`archivo.txt`) y lea los primeros 5 bytes de su contenido. Los datos leídos deben ser almacenados en un array de bytes de tamaño 10, comenzando desde la posición 0 del array. Luego, convierte los bytes leídos en una cadena de texto y muestra el contenido en la consola. Asegúrate de utilizar la instrucción `fich.read(buff, 0, 5)` para realizar la lectura.
-
----
-
-Estos ejercicios guían progresivamente desde abrir un archivo, hasta leer bytes y trabajar con partes específicas de buffers.
+Escribe un programa en Java que abra un archivo de texto (`archivo.txt`) y lea los primeros 5 bytes de su contenido. Los datos leídos deben ser almacenados en un array de bytes de tamaño 10, comenzando desde la posición 0 del array. Luego, convierte los bytes leídos en una cadena de texto y muestra el contenido en la consola.
