@@ -53,10 +53,6 @@ Escribe un programa en Java que abra un archivo de texto (`archivo.txt`) y lea l
 ### Ejercicio 12: Leer una parte específica de un archivo en un buffer más grande
 Escribe un programa en Java que abra un archivo de texto (`archivo.txt`) y lea los primeros 5 bytes de su contenido. Los datos leídos deben ser almacenados en un array de bytes de tamaño 10, comenzando desde la posición 0 del array. Luego, convierte los bytes leídos en una cadena de texto y muestra el contenido en la consola.
 
-
-
-Claro, aquí tienes una serie de ejercicios basados en los ejemplos que proporcionaste para practicar el manejo de archivos en Java. Estos ejercicios van en orden de dificultad, comenzando con tareas más básicas y avanzando a más complejas.
-
 ### Ejercicio 13: Escribir un solo carácter en un archivo
 
 Crea un método que escriba un único carácter en un archivo. Usa un OutputStream y asegúrate de que el archivo se cree en caso de que no exista.
