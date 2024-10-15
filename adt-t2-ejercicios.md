@@ -163,10 +163,7 @@ Requisitos:
 	•	Muestra estas estadísticas en la consola.
 
 ### Ejercicio 23:
-¡Me parece una excelente idea! Aquí tienes el ejercicio propuesto para leer un archivo CSV que contiene información de clientes, crear una lista de objetos Client y luego guardarlos en binario utilizando ObjectOutputStream.
-
-Descripción del ejercicio:
-
+Necesitamos un programa capaz de leer registros de una clase `Client`, que deberemos leer desde un archivo ´.csv´.
 1. Leer datos de un archivo CSV: El archivo debe contener información de varios clientes en formato CSV, por ejemplo:
 ```csv
 id,nombre,edad,email
@@ -175,6 +172,7 @@ id,nombre,edad,email
 3,Carlos,28,carlos@example.com
 ```
 
-2. Crear objetos Client: A partir de cada línea del CSV, se creará un objeto de tipo Client, que almacenará la información del cliente (ID, nombre, edad, email).
-3. Guardar en binario: Luego de crear los objetos Client, estos se almacenarán en un ArrayList. Finalmente, el programa debe escribir ese ArrayList en un archivo binario usando ObjectOutputStream.
+2. Crear objetos Client: A partir de cada línea del CSV, se creará un objeto de tipo `Client`, que almacenará la información del cliente (ID, nombre, edad, email).
+3. Guardar en binario: Luego de crear los objetos `Client`, estos se almacenarán en un ArrayList. Finalmente, el programa debe escribir ese `ArrayList` en un archivo binario usando `ObjectOutputStream`.
+4. Comprobar que los archivos se han guardado correctamente.
 
