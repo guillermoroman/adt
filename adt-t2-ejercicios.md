@@ -177,7 +177,7 @@ id,nombre,edad,email
 4. Comprobar que los archivos se han guardado correctamente.
 
 ### Ejercicio 24:
-Crear un programa que lea del archivo csv [censo_perros_salvajes.csv](https://github.com/guillermoroman/adt/blob/main/resources/censo-perros-peligrosos.csv) para crear un ArrayList de elementos de la clase `RazaPeligrosa` que deberás crear.
+Crear un programa que lea del archivo csv [censo_perros_salvajes.csv](https://github.com/guillermoroman/adt/blob/main/resources/censo-perros-peligrosos.csv) , obtenido de la web de [Datos abiertos de Gijón](https://www.gijon.es/en/datos), para crear un ArrayList de elementos de la clase `RazaPeligrosa` que deberás crear.
 Crea un método que imprima por pantalla dicha lista, utilizando el método `toString` de la clase `RazaPeligrosa`
 
 **Parte 2:**
