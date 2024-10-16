@@ -176,3 +176,5 @@ id,nombre,edad,email
 3. Guardar en binario: Luego de crear los objetos `Client`, estos se almacenarán en un ArrayList. Finalmente, el programa debe escribir ese `ArrayList` en un archivo binario usando `ObjectOutputStream`.
 4. Comprobar que los archivos se han guardado correctamente.
 
+### Ejercicio 24:
+Crear un programa que lea del archivo csv censo_perros_salvajes.csv
