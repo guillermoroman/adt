@@ -1,5 +1,7 @@
 # ADT - Tema 2 - Ejercicios
 
+[Soluciones: Parte 1](https://github.com/guillermoroman/adt-t2-ejercicios-parte1) - Ejercicios 1 - 22
+
 ### Ejercicio 1: Verificar permisos de lectura, escritura y ejecución
 
 **Objetivo:** Usar los métodos `canRead()`, `canWrite()` y `canExecute()` para comprobar los permisos de un archivo o directorio. Tenemos que lograr proporcionar a nuestro programa contextos suficientes para que se den todos los casos posibles para cada uno de los métodos, es decir, proporcionar la ruta tanto a un archivo con derechos de lectura, otro sin derechos, 
