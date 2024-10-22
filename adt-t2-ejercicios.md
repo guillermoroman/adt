@@ -184,3 +184,30 @@ Crea un método que imprima por pantalla dicha lista, utilizando el método `toS
 
 **Parte 2:**
 Crea un elemento `HashMap` donde se almacenarán las distintas razas peligrosas, así como los totales de cada una de las mismas. Deberá imprimir dicha lista por pantalla.
+
+
+### Ejercicio 25: XML & JSON
+Crea un programa capaz de leer desde un archivo en formato XML, una serie de objetos del tipo película. El programa deberá crear un ArrayList, que deberá después almacenar en un archivo JSON.
+```XML
+<peliculas>
+    <pelicula>
+        <nombre>El Padrino</nombre>
+        <director>Francis Ford Coppola</director>
+        <año>1972</año>
+        <duracion>175</duracion>
+    </pelicula>
+    <pelicula>
+        <nombre>Interstellar</nombre>
+        <director>Christopher Nolan</director>
+        <año>2014</año>
+        <duracion>169</duracion>
+    </pelicula>
+    <pelicula>
+        <nombre>La La Land</nombre>
+        <director>Damien Chazelle</director>
+        <año>2016</año>
+        <duracion>128</duracion>
+    </pelicula>
+</peliculas>
+```
+
