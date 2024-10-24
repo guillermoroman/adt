@@ -40,9 +40,10 @@ Atributos:
 - `vehiclePlate`: String
 
 Métodos:
-- `assignVehicleWithPlate`:  Recibe una matrícula que queda asignada al empleado. Un vehículo solo puede estar asignado a un empleado en un momento dado.
-- `unassignVehicle`: Elimina el contenido del atributo `VehiclePlate`.
-- constructores, getters, setters y toString.
+- `assignVehicleWithPlate`:  Recibe una matrícula que queda asignada al empleado. Si se asigna correctamente, se imprime `"Vehículo con matrícula " + plate + " asignado a " + name`.
+- `unassignVehicle`: Elimina el contenido del atributo `VehiclePlate`. Si se elimina correctamente, se imprime `"Vehículo con matrícula " + vehiclePlate + " desasignado de " + name`. De lo contrario, se imprime por pantalla `name + " no tiene un vehículo asignado."`
+- constructores, getters, setters y toString (`"Empleado [DNI: " + dni + ", Nombre: " + name + ", Año Contratado: " + yearHired +
+                ", Matrícula del Vehículo: " + (vehiclePlate != null ? vehiclePlate : "Ninguno") + "]"`).
 ### Vehicle
 Atributos:
 - `plate`: String
@@ -51,7 +52,8 @@ Atributos:
 - `yearBought`: int
 
 Métodos:
-- constructores, getters, setters y toString
+- constructores, getters, setters y toString (`"Vehículo [Marca: " + brand + ", Modelo: " + model + ", Matrícula: " + plate +
+                ", Año de Compra: " + yearBought + "]"`)
 
 ### EmployeeManager
 Esta clase pretende hacer operaciones relacionadas con una colección de empleados. Por eso, aunque los métodos trabajen con objetos de la clase `Employee`, no podemos guardarlos dentro de la clase. También contará con la información del arreglo de vehículos ya que los necesitará para poder asignarlos por matrícula.
@@ -64,7 +66,7 @@ Métodos:
 - Constructor con todos los atributos.
 - `findEmployeeByDni`: Toma un dni y devuelve un `Employee`.
 - `findVehicleByPlate`: Toma una matricula y devuelve un `Vehicle`.
-- `assignVehicleToEmployee`: Toma un dni y una matrícula y devuelve *true* si el vehículo se asigna correctamente; *false* si no.
+- `assignVehicleToEmployee`: Toma un dni y una matrícula y devuelve *true* si el vehículo se asigna correctamente; *false* si no. Un vehículo solo puede estar asignado a un empleado en un momento dado.
 - `unassignVehicleFromEmployee`: Toma un dni y devuelve *true* si el vehículo se desasigna correctamente; *false* si no.
 - `printAllEmployees` Imprime por pantalla la lista de empleados (sin información sobre vehículos)
 - `createEmployeeFolders`: no toma argumentos ni devuelve un valor. El método crea, dentro de la carpeta `data`, la carpeta `employeeDocuments`. Dentro de esta carpeta, el método crea una carpeta por cada empleado que tendrá por nombre su DNI ya que será único.
