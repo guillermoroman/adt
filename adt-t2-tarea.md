@@ -13,7 +13,7 @@ Dado que nuestro proyecto trata de gestión de empleados y recursos asignados a 
 / src
     / main
     / java
-	/ hr.resources
+	/ hr.management
             / model
                 - Employee.java
                 - Vehicle.java
