@@ -185,4 +185,73 @@ Cada vez que nuestra empresa compra un vehículo, recibe un XML del concesionari
 ## Pruebas unitarias
 **Para la corrección del ejercicio, además de observar el comportamiento de main, se ha creado una batería de pruebas unitarias que deberían superarse si se ha respetado la funcionalidad indicada, así como los nombres, parámetros y valores de retorno de los métodos propuestos.**
 
+## Main
+
+A continuación, el código de un main de ejemplo que pone a prueba la funcionalidad del programa. Se recomienda tener este main intacto y, en caso de que os sea necesario, creéis otra clase con método main en la que podéis hacer pruebas adicionales.
+
+```java
+try {
+            // 1. Cargar datos de empleados y vehículos desde JSON
+            ArrayList<Employee> employees = JsonManager.loadEmployeesFromJson("data/employees.json");
+            ArrayList<Vehicle> vehicles = JsonManager.loadVehiclesFromJson("data/vehicles.json");
+
+            // 2. Añadir un vehículo desde el archivo newVehicle1.xml
+            Vehicle newVehicle = XmlManager.readVehicleFromXml("data/newVehicle1.xml");
+            vehicles.add(newVehicle);
+            System.out.println("Nuevo vehículo añadido desde XML: " + newVehicle);
+
+            // 3. Asignar el nuevo vehículo al empleado con DNI 87654321B
+            EmployeeManager employeeManager = new EmployeeManager( employees, vehicles);
+            boolean assigned = employeeManager.assignVehicleToEmployee("87654321B", newVehicle.getPlate());
+            if (assigned) {
+                System.out.println("Vehículo asignado correctamente al empleado con DNI 87654321B.");
+            } else {
+                System.out.println("No se pudo asignar el vehículo.");
+            }
+
+            // 4. Desasignar el vehículo del empleado Walter Smith
+            boolean unassigned = employeeManager.unassignVehicleFromEmployee("23456789C");
+            if (unassigned) {
+                System.out.println("Vehículo desasignado correctamente del empleado Walter Smith.");
+            } else {
+                System.out.println("No se pudo desasignar el vehículo del empleado Walter Smith.");
+            }
+
+            // 5. Generar un informe en formato TXT utilizando ReportGenerator
+            ReportGenerator.generateReport(employees, vehicles, "data/informe.txt");
+            System.out.println("Informe generado exitosamente en 'data/informe.txt'.");
+
+            // 6. Imprimir todos los empleados con el método printAllEmployees
+            System.out.println("Lista de empleados:");
+            employeeManager.printAllEmployees();
+
+            // Operación adicional: Guardar de nuevo los datos actualizados en los archivos JSON
+            JsonManager.saveEmployeesToJson(employees, "data/employees.json");
+            JsonManager.saveVehiclesToJson(vehicles, "data/vehicles.json");
+            System.out.println("Datos actualizados guardados en archivos JSON.");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+```
+
+Salida esperada para el código anterior:
+
+```
+Nuevo vehículo añadido desde XML: Vehículo [Marca: Volkswagen, Modelo: Golf, Matrícula: 6789-ADT, Año de Compra: 2024]
+Vehículo con matrícula 6789-ADT asignado a John Doe
+Vehículo asignado correctamente al empleado con DNI 87654321B.
+Walter Smith no tiene un vehículo asignado.
+Vehículo desasignado correctamente del empleado Walter Smith.
+Informe generado exitosamente en 'data/informe.txt'.
+Lista de empleados:
+Empleado [DNI: 12345678A, Nombre: James Bond, Año Contratado: 2006, Matrícula del Vehículo: 0007-BND]
+Empleado [DNI: 87654321B, Nombre: John Doe, Año Contratado: 2018, Matrícula del Vehículo: 6789-ADT]
+Empleado [DNI: 23456789C, Nombre: Walter Smith, Año Contratado: 2019, Matrícula del Vehículo: Ninguno]
+Empleado [DNI: 34567890D, Nombre: Kathy Spencer, Año Contratado: 2022, Matrícula del Vehículo: Ninguno]
+Datos actualizados guardados en archivos JSON.
+```
+
+
 ---
