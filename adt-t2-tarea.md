@@ -1,5 +1,5 @@
 
-En esta página vamos a diseñar un pequeño sistema de gestión de recursos humanos donde llevaremos un control de los empleados y los vehículos de la empresa.
+En esta tarea vamos a diseñar un pequeño sistema de gestión de recursos humanos donde llevaremos un control de los empleados y los vehículos de la empresa.
 
 ## Paquete
 Dado que nuestro proyecto trata de gestión de empleados y recursos asignados a los mismos, vamos a crear nuestro proyecto dentro de un paquete con el nombre `hr.management`.
