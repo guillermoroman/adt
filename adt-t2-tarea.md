@@ -69,7 +69,7 @@ Métodos:
 - `assignVehicleToEmployee`: Toma un dni y una matrícula y devuelve *true* si el vehículo se asigna correctamente; *false* si no. Un vehículo solo puede estar asignado a un empleado en un momento dado.
 - `unassignVehicleFromEmployee`: Toma un dni y devuelve *true* si el vehículo se desasigna correctamente; *false* si no. Si no encuentra el empleado, imprime _"Empleado no encontrado."_.
 - `printAllEmployees` Imprime por pantalla la lista de empleados (sin información sobre vehículos)
-- `createEmployeeFolders`: no toma argumentos ni devuelve un valor. El método crea, dentro de la carpeta `data`, la carpeta `employeeDocuments`. Dentro de esta carpeta, el método crea una carpeta por cada empleado que tendrá por nombre su DNI ya que será único.
+- `createEmployeeFolders`: no toma argumentos ni devuelve un valor. El método crea, dentro de la carpeta `data`, la carpeta `employeeDocuments`. Dentro de esta carpeta, el método crea una carpeta por cada empleado que tendrá por nombre su DNI ya que será único. Si tiene éxito, imprime `"Carpeta 'employeeDocuments' creada."`. De lo contrario, imprime `"Error al crear la carpeta 'employeeDocuments'."`
 - `removeEmployee`: Acepta un dni que pertenece a un empleado que deberá borrar de la lista actual. Deberá ocuparse de eliminar la carpeta asociada a este empleado que se encontrará dentro de la carpeta `data`.
 
 ### JsonManager
