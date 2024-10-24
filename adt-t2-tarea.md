@@ -10,26 +10,24 @@ Dado que nuestro proyecto trata de gestión de empleados y recursos asignados a 
 
 ## Jerarquía de archivos
 ```
-/src
-	/main
-		/java
-			/hr.resources
-				/model
-				    - Employee.java
-				    - Vehicle.java
-				/tools
-				    - JsonManager.java
-				    - XMLManager.java
-				    - ReportGenerator.java
-				    - EmployeeManager.java
-			    - Main.java
+/ src
+    / main
+    / java
+	/ hr.resources
+            / model
+                - Employee.java
+                - Vehicle.java
+            /tools
+                - JsonManager.java
+                - XMLManager.java
+                - ReportGenerator.java
+                - EmployeeManager.java
+                - Main.java
 /data
     - employees.json
     - vehicles.json
     - report.txt
-/dataIn
     - newVehicle1.xml
-    - newVehicle2.xml
 ```
 
 
