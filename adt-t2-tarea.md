@@ -71,6 +71,8 @@ Métodos:
 ### JsonManager
 Atributos:
 - `objectMapper`: atributo estático inicializado en la propia declaración com un nuevo `ObjectMapper`.
+
+Métodos:
 - `saveEmployeesToJson`: Toma una lista de empleados (`ArrayList<Employee>`) y una ruta de archivo, y guarda la lista en un archivo JSON. Devuelve true si la operación de guardado fue exitosa, y false si ocurre algún error.
 - `loadEmployeesFromJson`: Toma una ruta de archivo y devuelve un `ArrayList<Employee>`, que contiene la lista de empleados deserializados desde el archivo JSON. Si ocurre algún error (por ejemplo, si el archivo no existe o está corrupto), devuelve un Optional.empty().
 - `saveVehiclesToJson`: Toma una lista de vehículos (`ArrayList<Vehicle>`) y una ruta de archivo, y guarda la lista en un archivo JSON. Devuelve true si la operación de guardado fue exitosa, y false si ocurre algún error.
