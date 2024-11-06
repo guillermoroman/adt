@@ -1,6 +1,6 @@
 Información para poblar la tabla de pizzas en nuestra base de datos
 ```sql
-INSERT INTO `pizzas` (`ID`, `nombre`, `coste`, `precio`, `ingredientes`) VALUES
+INSERT INTO `pizzas` (`id`, `nombre`, `coste`, `precio`, `ingredientes`) VALUES
 (1, 'Margherita', 3, 9, 'Tomate, Mozzarella, Albahaca'),
 (2, 'Pepperoni', 3.5, 9, 'Tomate, Mozzarella, Pepperoni'),
 (3, 'Hawaiana', 4, 10, 'Tomate, Mozzarella, Jamón, Piña'),
