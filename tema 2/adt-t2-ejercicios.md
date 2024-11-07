@@ -217,3 +217,18 @@ Crea un breve programa que:
 - cree un array de objetos de tipo mascota com campo nobre, especie y edad
 - imprima un informe en un archivo txt.
 - sea capaz de incluir tambien mascotas desde un csv que se leera a mano, no con un parseador.
+
+`mascotas.json`
+```json
+[
+    {"nombre": "Firulais", "especie": "Perro", "edad": 5},
+    {"nombre": "Michi", "especie": "Gato", "edad": 3}
+]
+```
+
+`mascotas.csv`
+```csv
+Luna,Perro,4
+Felix,Gato,2
+```
+
