@@ -212,6 +212,8 @@ Crea un programa capaz de leer desde un archivo en formato XML, una serie de obj
 ```
 ### Ejercicio 26
 
+[Solución](https://github.com/guillermoroman/adt-t2-ejercicio26)
+
 Crea un breve programa que:
 - lea con jackson de un fichero json.
 - cree un array de objetos de tipo mascota com campo nobre, especie y edad
