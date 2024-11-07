@@ -210,4 +210,10 @@ Crea un programa capaz de leer desde un archivo en formato XML, una serie de obj
     </pelicula>
 </peliculas>
 ```
+### Ejercicio 26
 
+Crea un breve programa que:
+- lea con jackson de un fichero json.
+- cree un array de objetos de tipo mascota com campo nobre, especie y edad
+- imprima un informe en un archivo txt.
+- sea capaz de incluir tambien mascotas desde un csv que se leera a mano, no con un parseador.
