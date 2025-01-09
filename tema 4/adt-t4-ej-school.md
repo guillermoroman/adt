@@ -1,6 +1,8 @@
 
 ### **Ejercicio: Sistema de Gestión Escolar**
 
+(Solución)[https://github.com/guillermoroman/adt-t4-school-management-clase]
+
 Eres responsable de desarrollar un sistema de gestión escolar utilizando Hibernate. Este sistema debe modelar las siguientes entidades y relaciones:
 
 #### **Entidades principales:**
