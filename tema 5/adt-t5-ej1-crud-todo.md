@@ -26,4 +26,13 @@ Desarrollar una API REST básica para la gestión de tareas, permitiendo crear, 
 - Mensajes de error adecuados en caso de fallo.  
 - Posibilidad de filtrar tareas completadas o pendientes.  
 
+
+## Parte 2
+Nuevo endpoint:
+   - **GET `/tasks/completed`** → Obtener una tarea por su ID.
+   - Ejemplo: tasks/filter?completed=true
+
+
+
+##
 🚀 **Más adelante se añadirá la gestión de fechas de vencimiento (`due_date`) y asignación de usuarios (`user`) a cada tarea.**
