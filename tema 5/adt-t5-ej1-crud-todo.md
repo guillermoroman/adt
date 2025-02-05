@@ -29,7 +29,7 @@ Desarrollar una API REST básica para la gestión de tareas, permitiendo crear, 
 
 ## Parte 2
 Nuevo endpoint:
-   - **GET `/tasks/completed`** → Obtener una tarea por su ID.
+   - **GET `/tasks/filter`** → Obtener una tarea por su ID.
    - Ejemplo: tasks/filter?completed=true
 
 
